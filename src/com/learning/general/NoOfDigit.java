@@ -1,4 +1,4 @@
-package com.test.learning;
+package com.learning.general;
 
 public class NoOfDigit {
     int num=1234565616, count=0;

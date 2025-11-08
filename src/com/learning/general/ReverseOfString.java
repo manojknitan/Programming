@@ -1,7 +1,5 @@
-package com.test.learning;
+package com.learning.general;
 
-import java.sql.SQLOutput;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ReverseOfString {
