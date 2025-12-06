@@ -2,20 +2,22 @@ package com.learning.recursion.array;
 
 import java.util.Scanner;
 
-public class FirstOccuranceInArray {
-    public int idxOfFirstOccur(int[] arr, int idx, int ele)
+public class LastOccurrenceInArray {
+
+    public int idxOfLastOccur(int[] arr, int idx, int ele)
     {
         if(idx == arr.length)
             return -1;
-        if(arr[idx] == ele)
+        int iosa = idxOfLastOccur(arr, idx+1, ele);
+        if(iosa == -1)
         {
-            return idx;
+            if(arr[idx] == ele)
+                return idx;
+            else
+                return iosa;
         }
         else
-        {
-            int iosa = idxOfFirstOccur(arr, idx + 1, ele);
             return iosa;
-        }
     }
 
     public static void main(String[] args) {
@@ -34,7 +36,7 @@ public class FirstOccuranceInArray {
         System.out.println("Enter element to search: ");
         int se = sc.nextInt();
 
-        FirstOccuranceInArray foia = new FirstOccuranceInArray();
-        System.out.println("The index is: "+foia.idxOfFirstOccur(a,0,se));
+        LastOccurrenceInArray foia = new LastOccurrenceInArray();
+        System.out.println("The index is: "+foia.idxOfLastOccur(a,0,se));
     }
 }
