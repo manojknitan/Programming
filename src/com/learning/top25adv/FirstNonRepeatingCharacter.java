@@ -1,15 +1,12 @@
-package com.learning.top20adv;
+package com.learning.top25adv;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class FirstNonRepeatingCharacter {
 
     public static void firstNonRepCharUsingMap(String s)
     {
-        Map<Character, Integer>  map = new HashMap<>();
+        Map<Character, Integer>  map = new LinkedHashMap<>();
 
         for(int i=0; i<s.length(); i++)
         {

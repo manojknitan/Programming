@@ -1,4 +1,4 @@
-package com.learning.top20adv;
+package com.learning.top25adv;
 
 public class ReverseTokenOfString {
     public static void reverseWordFromSentence(String s)
