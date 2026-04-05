@@ -35,10 +35,11 @@ public class LongestSubstringWithoutRepeatingChars {
         String res = s.substring(maxStart, maxStart+maxLen);
         System.out.println(res);
         System.out.println(maxLen);
+        System.out.println(maxLen+res);
     }
     public static void main(String[] args) {
-        //String str = "abcabcbb";
-        String str = "pwwkewxpw";
+        String str = "abcabcbb";
+        //String str = "pwwkewxpw";
         longestSubstringUniqueChars(str);
     }
 }
